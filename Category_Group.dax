@@ -1,0 +1,99 @@
+Category_Group =
+SWITCH(
+    Dim_Product[Category_Name_English],
+
+    -- Home & Furniture
+    "bed_bath_table", "Home & Furniture",
+    "furniture_decor", "Home & Furniture",
+    "housewares", "Home & Furniture",
+    "office_furniture", "Home & Furniture",
+    "furniture_living_room", "Home & Furniture",
+    "home_confort", "Home & Furniture",
+    "home_comfort_2", "Home & Furniture",
+    "kitchen_dining_laundry_garden_furniture", "Home & Furniture",
+    "furniture_bedroom", "Home & Furniture",
+    "furniture_mattress_and_upholstery", "Home & Furniture",
+    "portateis_cozinha_e_preparadores_de_alimentos", "Home & Furniture",
+    "la_cuisine", "Home & Furniture",
+
+    -- Electronics & Appliances
+    "computers_accessories", "Electronics & Appliances",
+    "telephony", "Electronics & Appliances",
+    "computers", "Electronics & Appliances",
+    "small_appliances", "Electronics & Appliances",
+    "electronics", "Electronics & Appliances",
+    "consoles_games", "Electronics & Appliances",
+    "home_appliances_2", "Electronics & Appliances",
+    "home_appliances", "Electronics & Appliances",
+    "fixed_telephony", "Electronics & Appliances",
+    "air_conditioning", "Electronics & Appliances",
+    "audio", "Electronics & Appliances",
+    "small_appliances_home_oven_and_coffee", "Electronics & Appliances",
+    "tablets_printing_image", "Electronics & Appliances",
+    "cine_photo", "Electronics & Appliances",
+    "music", "Electronics & Appliances",
+    "dvds_blu_ray", "Electronics & Appliances",
+    "cds_dvds_musicals", "Electronics & Appliances",
+    "pc_gamer", "Electronics & Appliances",
+
+    -- Fashion & Accessories (includes gifts/novelty)
+    "watches_gifts", "Fashion & Accessories",
+    "cool_stuff", "Fashion & Accessories",
+    "fashion_bags_accessories", "Fashion & Accessories",
+    "luggage_accessories", "Fashion & Accessories",
+    "fashion_shoes", "Fashion & Accessories",
+    "fashion_male_clothing", "Fashion & Accessories",
+    "fashion_underwear_beach", "Fashion & Accessories",
+    "fashio_female_clothing", "Fashion & Accessories",
+    "fashion_sport", "Fashion & Accessories",
+    "fashion_childrens_clothes", "Fashion & Accessories",
+
+    -- Health, Beauty & Baby
+    "health_beauty", "Health, Beauty & Baby",
+    "baby", "Health, Beauty & Baby",
+    "perfumery", "Health, Beauty & Baby",
+    "diapers_and_hygiene", "Health, Beauty & Baby",
+
+    -- Sports, Leisure & Pets
+    "sports_leisure", "Sports, Leisure & Pets",
+    "toys", "Sports, Leisure & Pets",
+    "pet_shop", "Sports, Leisure & Pets",
+    "musical_instruments", "Sports, Leisure & Pets",
+    "christmas_supplies", "Sports, Leisure & Pets",
+    "party_supplies", "Sports, Leisure & Pets",
+    "flowers", "Sports, Leisure & Pets",
+
+    -- Home Improvement & Auto
+    "auto", "Home Improvement & Auto",
+    "garden_tools", "Home Improvement & Auto",
+    "construction_tools_construction", "Home Improvement & Auto",
+    "home_construction", "Home Improvement & Auto",
+    "construction_tools_lights", "Home Improvement & Auto",
+    "construction_tools_safety", "Home Improvement & Auto",
+    "costruction_tools_garden", "Home Improvement & Auto",
+    "costruction_tools_tools", "Home Improvement & Auto",
+    "signaling_and_security", "Home Improvement & Auto",
+
+    -- Books, Stationery & Art
+    "stationery", "Books, Stationery & Art",
+    "books_general_interest", "Books, Stationery & Art",
+    "books_technical", "Books, Stationery & Art",
+    "books_imported", "Books, Stationery & Art",
+    "art", "Books, Stationery & Art",
+    "arts_and_craftmanship", "Books, Stationery & Art",
+
+    -- Food, Industry & Other
+    "agro_industry_and_commerce", "Food, Industry & Other",
+    "industry_commerce_and_business", "Food, Industry & Other",
+    "market_place", "Food, Industry & Other",
+    "food", "Food, Industry & Other",
+    "food_drink", "Food, Industry & Other",
+    "drinks", "Food, Industry & Other",
+    "security_and_services", "Food, Industry & Other",
+
+    -- Unclassified in source
+    "Unknown", "Unclassified",
+
+    -- fallback for anything not matched
+    "Unclassified"
+)

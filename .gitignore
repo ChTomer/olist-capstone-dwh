@@ -1,0 +1,12 @@
+# Raw Kaggle CSVs - not redistributed (licensing + size)
+*.csv
+
+# Personal Hebrew-language doc - kept locally only, English version goes to GitHub
+Project_Documentation_HE.md
+
+# Personal scratch/debug SQL - not part of the polished pipeline
+בדיקות*.sql
+
+# OS junk
+.DS_Store
+Thumbs.db

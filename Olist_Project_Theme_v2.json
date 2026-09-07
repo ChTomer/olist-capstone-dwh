@@ -1,0 +1,129 @@
+{
+  "name": "Olist_Project_Theme_v2",
+  "dataColors": [
+    "#005B99",
+    "#FFD700",
+    "#4e88ca",
+    "#e9aa2b",
+    "#81D9FF",
+    "#333333",
+    "#5c5c5c",
+    "#c2c2c2"
+  ],
+  "background": "#0A2540",
+  "foreground": "#FFFFFF",
+  "tableAccent": "#81D9FF",
+  "good": "#4e88ca",
+  "bad": "#e9aa2b",
+  "neutral": "#c2c2c2",
+
+  "textClasses": {
+    "callout": { "fontFace": "Arial", "color": "#005B99", "fontSize": 32 },
+    "title":   { "fontFace": "Arial", "color": "#FFFFFF", "fontSize": 13 },
+    "header":  { "fontFace": "Arial", "color": "#FFFFFF", "fontSize": 13 },
+    "label":   { "fontFace": "Arial", "color": "#c2c2c2", "fontSize": 9 }
+  },
+
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "show": true, "color": { "solid": { "color": "#FFFFFF" } }, "transparency": 0 }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#81D9FF" } }, "radius": 14 }],
+        "outspacePane": [{ "backgroundColor": { "solid": { "color": "#0A2540" } } }],
+        "dropShadow": [{ "show": false }],
+        "title": [{
+          "show": true,
+          "background": { "solid": { "color": "#005B99" } },
+          "fontColor": { "solid": { "color": "#FFFFFF" } },
+          "fontSize": 13,
+          "bold": true,
+          "fontFamily": "Arial",
+          "alignment": "center"
+        }],
+        "subTitle": [{
+          "show": true,
+          "fontColor": { "solid": { "color": "#5c5c5c" } },
+          "fontSize": 9,
+          "fontFamily": "Arial",
+          "alignment": "center"
+        }]
+      }
+    },
+
+    "card": {
+      "*": {
+        "labels": [{ "color": { "solid": { "color": "#005B99" } }, "fontSize": 34, "fontFamily": "Arial" }],
+        "categoryLabels": [{ "color": { "solid": { "color": "#5c5c5c" } }, "fontSize": 13, "fontFamily": "Arial" }],
+        "background": [{ "show": true, "color": { "solid": { "color": "#FFFFFF" } } }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#81D9FF" } }, "radius": 16 }],
+        "title": [{
+          "show": true,
+          "background": { "solid": { "color": "#005B99" } },
+          "fontColor": { "solid": { "color": "#FFFFFF" } },
+          "fontSize": 13,
+          "bold": true,
+          "fontFamily": "Arial",
+          "alignment": "center"
+        }]
+      }
+    },
+
+    "multiRowCard": {
+      "*": {
+        "background": [{ "show": true, "color": { "solid": { "color": "#FFFFFF" } } }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#81D9FF" } }, "radius": 16 }]
+      }
+    },
+
+    "lineChart": {
+      "*": {
+        "dataPoint": [{ "defaultColor": { "solid": { "color": "#005B99" } } }],
+        "lineStyles": [{ "strokeWidth": 3 }]
+      }
+    },
+
+    "columnChart": {
+      "*": { "dataPoint": [{ "defaultColor": { "solid": { "color": "#005B99" } } }] }
+    },
+    "clusteredColumnChart": {
+      "*": { "dataPoint": [{ "defaultColor": { "solid": { "color": "#005B99" } } }] }
+    },
+    "hundredPercentStackedBarChart": {
+      "*": {}
+    },
+    "scatterChart": {
+      "*": { "dataPoint": [{ "defaultColor": { "solid": { "color": "#005B99" } } }] }
+    },
+
+    "pieChart": { "*": {} },
+    "donutChart": { "*": {} },
+
+    "tableEx": {
+      "*": {
+        "columnHeaders": [{ "backColor": { "solid": { "color": "#005B99" } }, "fontColor": { "solid": { "color": "#FFFFFF" } }, "fontFamily": "Arial" }],
+        "values": [{ "fontFamily": "Arial", "fontColor": { "solid": { "color": "#333333" } } }],
+        "grid": [{ "gridVertical": false }]
+      }
+    },
+
+    "slicer": {
+      "*": {
+        "background": [{ "show": true, "color": { "solid": { "color": "#FFFFFF" } } }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#81D9FF" } }, "radius": 12 }],
+        "title": [{
+          "show": true,
+          "background": { "solid": { "color": "#005B99" } },
+          "fontColor": { "solid": { "color": "#FFFFFF" } },
+          "fontSize": 13,
+          "bold": true,
+          "fontFamily": "Arial",
+          "alignment": "center"
+        }]
+      }
+    },
+
+    "textbox": {
+      "*": { "background": [{ "show": false }] }
+    }
+  }
+}
