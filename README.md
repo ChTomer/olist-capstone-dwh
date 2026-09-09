@@ -41,7 +41,7 @@ They share conformed dimensions (`Dim_Customer`, `Dim_Date`) and connect through
 | Dimension | Grain | Notes |
 |---|---|---|
 | `Dim_Customer` | `customer_unique_id` | Person-level, not order-level (96,096 vs. 99,441 rows) |
-| `Dim_Order` | `order_id` | Shared anchor for all 3 facts: status, delivery address, delivery timing |
+| `Dim_Order` | `order_id` | Shared anchor for all 3 facts: status, delivery address (delivery timing lives in `Fact_Order_Items` only — kept out of the dimension to avoid two disagreeing sources for the same fact) |
 | `Dim_Seller` | `seller_id` | 3,095 sellers |
 | `Dim_Product` | `product_id` | Includes `Category_Group` (8 rollup groups over 74 categories) |
 | `Dim_Date` | `Date_Key` | Marked as a Power BI date table |
@@ -56,16 +56,23 @@ A circular relationship (`Dim_Date` ↔ Fact ↔ `Dim_Order` ↔ `Dim_Date`) was
 
 Full grain analysis and before/after proof queries: [`sql/05_analytical_flaws.sql`](sql/05_analytical_flaws.sql), [`sql/15_self_review_proofs.sql`](sql/15_self_review_proofs.sql).
 
-## Dashboard — 4 Pages (Power BI, Import mode)
+## Dashboard — 5 Pages (Power BI, Import mode)
 
-| Page | Answers |
-|---|---|
-| Overview | What's driving revenue, by product category |
-| Fulfillment & Delivery | Are we meeting delivery promises, and at what cost? |
-| Sellers & Geography | Where and with whom does business happen? |
-| Payments & Customer Voice | How did customers pay, and what did they say? |
+**1. Overview** — what's driving revenue, by product category group
+![Overview](docs/screenshots/1_Overview.png)
 
-Screenshots: [`docs/screenshots/`](docs/screenshots/)
+**2. Where the Time Goes** — not just whether an order is late, but where the time goes and who's responsible (seller handling vs. carrier transit)
+![Where the Time Goes](docs/screenshots/2_Where_the_Time_Goes.png)
+
+**3. Sellers & Geography** — a Bookmark toggle swaps the map and chart between a customer view and a seller view
+![Seller view](docs/screenshots/3A_Seller___Geography.png)
+![Customer view](docs/screenshots/3B_Customers___Geography.png)
+
+**4. Payments & Customer Voice** — how customers paid, and what they said about it
+![Payments & Customer Voice](docs/screenshots/4_Payments___Customer_Voice.png)
+
+**5. Delivery Promise & Satisfaction** — what really happens between the delivery promise and reality, and what it costs in satisfaction
+![Delivery Promise & Satisfaction](docs/screenshots/5_Delivery_Promise___Satisfactions.png)
 
 ## Repository Structure
 ```
